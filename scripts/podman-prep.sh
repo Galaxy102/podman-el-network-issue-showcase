@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Clean system
-sudo podman ps -aq | xargs podman rm -f
+sudo podman ps -aq | xargs sudo podman rm -f
 sudo podman network remove testnet0 testnet1
 
 sudo podman network create testnet0
